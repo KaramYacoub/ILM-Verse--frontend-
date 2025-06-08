@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Loader2, Search } from "lucide-react";
 import { useAdminStore } from "../../store/AdminStore";
-import AdminReportModal from "../admin/adminReportModal";
+import AdminReportModal from "../admin/AdminReportModal";
 
 function SearchStudent() {
   const navigate = useNavigate();
