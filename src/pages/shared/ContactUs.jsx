@@ -24,8 +24,8 @@ function ContactUs() {
 
       {/* Main Content */}
       <div className="flex-grow flex items-center justify-center p-6 relative z-10">
-        <div className="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 text-white p-10 w-full max-w-lg">
-          <h1 className="text-4xl font-bold text-center mb-8 bg-gradient-to-r from-orange-400 via-yellow-400 to-pink-500 bg-clip-text text-transparent">
+        <div className="bg-white/10 backdrop-blur-md rounded-2xl shadow-xl border border-white/20 text-white p-4 sm:p-10 w-full max-w-lg">
+          <h1 className="text-3xl sm:text-4xl font-bold text-center mb-8 bg-gradient-to-r from-orange-400 via-yellow-400 to-pink-500 bg-clip-text text-transparent">
             Contact Us
           </h1>
 
