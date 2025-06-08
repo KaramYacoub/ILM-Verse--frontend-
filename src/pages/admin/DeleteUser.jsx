@@ -3,7 +3,7 @@ import AdminNavbar from "../../components/admin/AdminNavbar";
 import StudentDeleteTable from "../../components/admin/deletition/StudentDeleteTable";
 import TeacherDeleteTable from "../../components/admin/deletition/TeacherDeleteTable";
 import ParentDeleteTable from "../../components/admin/deletition/ParentDeleteTable";
-import AdminDeleteTable from "../../components/admin/deletition/adminDeleteTable";
+import AdminDeleteTable from "../../components/admin/deletition/AdminDeleteTable";
 import TabNavigation from "../../components/admin/TabNavigation";
 
 function DeleteUser() {
