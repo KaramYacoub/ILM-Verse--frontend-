@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { Trash2, File, Video, Plus, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import AdminNavbar from "../adminNavbar";
+import AdminNavbar from "../AdminNavbar";
 import { useCourseStore } from "../../../store/CourseStore";
 import MediaPreviewModal from "../../course/MediaPreviewModal";
 import UploadModal from "../../course/UploadModal";

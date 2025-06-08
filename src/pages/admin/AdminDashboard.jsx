@@ -1,5 +1,5 @@
 import { useState } from "react";
-import AdminNavbar from "../../components/admin/adminNavbar";
+import AdminNavbar from "../../components/admin/AdminNavbar";
 import SearchStudent from "../../components/admin/SearchStudent";
 import SearchParent from "../../components/admin/SearchParent";
 import QuickActions from "../../components/admin/QuickActions";

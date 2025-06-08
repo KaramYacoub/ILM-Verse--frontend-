@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { AlertCircle, Loader2, XCircle } from "lucide-react";
 import { useAdminStore } from "../../store/AdminStore";
-import AdminNavbar from "../../components/admin/adminNavbar";
+import AdminNavbar from "../../components/admin/AdminNavbar";
 import { formatDate, getDayOfWeek } from "../../utils/utils";
 
 function AdminShowAbsences() {

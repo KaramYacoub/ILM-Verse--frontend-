@@ -1,6 +1,6 @@
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
-import AdminNavbar from "../adminNavbar";
+import AdminNavbar from "../AdminNavbar";
 import { useCourseStore } from "../../../store/CourseStore";
 import { AlertCircle, ArrowLeft, Plus, FileText } from "lucide-react";
 import ShowCourseStudents from "../ShowCourseStudents";

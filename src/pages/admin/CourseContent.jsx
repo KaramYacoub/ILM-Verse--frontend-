@@ -1,6 +1,6 @@
 import { useState, useEffect, useMemo, useCallback } from "react";
 import { useNavigate } from "react-router-dom";
-import AdminNavbar from "../../components/admin/adminNavbar";
+import AdminNavbar from "../../components/admin/AdminNavbar";
 import { useCourseStore } from "../../store/CourseStore";
 import { useAdminStore } from "../../store/AdminStore";
 import ConfirmModal from "../../components/shared/ConfirmModal";

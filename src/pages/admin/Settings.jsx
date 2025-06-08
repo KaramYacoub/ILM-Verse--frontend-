@@ -1,5 +1,5 @@
 import { useState } from "react";
-import AdminNavbar from "../../components/admin/adminNavbar";
+import AdminNavbar from "../../components/admin/AdminNavbar";
 import { useAdminStore } from "../../store/AdminStore";
 import ErrorModal from "../../components/shared/ErrorModal";
 import SuccessModal from "../../components/shared/SuccessModal";

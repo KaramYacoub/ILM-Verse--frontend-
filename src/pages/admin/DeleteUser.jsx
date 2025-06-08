@@ -1,5 +1,5 @@
 import { useState } from "react";
-import AdminNavbar from "../../components/admin/adminNavbar";
+import AdminNavbar from "../../components/admin/AdminNavbar";
 import StudentDeleteTable from "../../components/admin/deletition/StudentDeleteTable";
 import TeacherDeleteTable from "../../components/admin/deletition/TeacherDeleteTable";
 import ParentDeleteTable from "../../components/admin/deletition/ParentDeleteTable";

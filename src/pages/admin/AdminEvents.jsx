@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
-import AdminNavbar from "../../components/admin/adminNavbar";
+import AdminNavbar from "../../components/admin/AdminNavbar";
 import EventList from "../../components/shared/EventList";
 import { Loader2, Plus } from "lucide-react";
 import EventModal from "../../components/admin/EventModal";

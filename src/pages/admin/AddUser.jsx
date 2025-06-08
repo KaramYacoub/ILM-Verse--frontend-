@@ -1,7 +1,7 @@
-import AdminNavbar from "../../components/admin/adminNavbar";
+import AdminNavbar from "../../components/admin/AdminNavbar";
 import { useEffect, useState } from "react";
 import { useAdminStore } from "../../store/AdminStore";
-import AdminForm from "../../components/admin/addition/adminForm";
+import AdminForm from "../../components/admin/addition/AdminForm";
 import StudentForm from "../../components/admin/addition/StudentForm";
 import TeacherForm from "../../components/admin/addition/TeacherForm";
 import ParentForm from "../../components/admin/addition/ParentForm";
