@@ -18,7 +18,6 @@ function StudentShowQuizzes() {
   }, [course_id, getQuizzes]);
 
   const handleShowResult = (quiz) => {
-    console.log(quiz);
     navigate(`/student/course/${course_id}/quizes/${quiz.quiz_id}/mark`, {
       state: { quiz },
     });
@@ -65,7 +64,8 @@ function StudentShowQuizzes() {
                     <td className="font-semibold">{quiz.title}</td>
                     <td>{formatShortDate(quiz.start_date)}</td>
                     <td>
-                      {formatTime(quiz.start_time)} - {formatTime(quiz.end_time)}
+                      {formatTime(quiz.start_time)} -{" "}
+                      {formatTime(quiz.end_time)}
                     </td>
                     <td>{quiz.duration} minutes</td>
                     <td>{quiz.total_points} pts</td>

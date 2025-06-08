@@ -18,7 +18,7 @@ function ContactUs() {
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm z-0"></div>
 
       {/* Navigation */}
-      <div className="relative z-10">
+      <div className="relative z-[110]">
         <HomeNav />
       </div>
 

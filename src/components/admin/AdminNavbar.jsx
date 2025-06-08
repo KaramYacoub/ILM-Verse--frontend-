@@ -6,7 +6,6 @@ import {
   FaCalendarAlt,
   FaSignOutAlt,
   FaComments,
-  FaChartBar,
   FaCog,
   FaBars,
   FaTimes,
@@ -133,12 +132,11 @@ function AdminNavbar() {
                 </Link>
 
                 <Link
-                  to="/reports"
+                  to="/settings"
                   className="flex items-center gap-3 py-2 cursor-pointer hover:text-yellow-500 px-6"
-                  onClick={toggleMenu}
                 >
-                  <FaChartBar color="#fff" />
-                  <span>Reports</span>
+                  <FaCog color="#fff" />
+                  <span>Settings</span>
                 </Link>
 
                 <button

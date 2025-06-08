@@ -89,23 +89,23 @@ function HomeNav() {
 
       {/* Mobile Navbar */}
       <div className="md:hidden flex justify-between items-center">
-        {/* Logo */}
+        {/* Logo - Left Side */}
         <Link to="/" className="btn btn-ghost px-0">
           <img src="/Logo-without-bg.png" alt="Logo" className="h-10 w-auto" />
         </Link>
 
-        {/* Hamburger Button */}
+        {/* Hamburger Button - Right Side */}
         <button onClick={toggleMenu} className="text-white">
           {isMenuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
         </button>
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="absolute top-20 left-0 right-0 bg-primary z-50 py-4 shadow-lg">
+          <div className="absolute top-16 left-0 right-0 bg-primary z-[120] py-4 shadow-lg">
             <div className="flex flex-col gap-4 text-accent">
               <Link
                 to="/"
-                className="flex items-center gap-3 py-2 cursor-pointer hover:text-yellow-500 pl-6"
+                className="flex items-center gap-3 py-2 cursor-pointer hover:text-yellow-500 px-6"
                 onClick={toggleMenu}
               >
                 <FaHome color="#fff" />
@@ -113,25 +113,23 @@ function HomeNav() {
               </Link>
               <Link
                 to="/contact"
-                className="flex items-center gap-3 py-2 cursor-pointer hover:text-yellow-500 pl-6"
+                className="flex items-center gap-3 py-2 cursor-pointer hover:text-yellow-500 px-6"
                 onClick={toggleMenu}
               >
                 <FaEnvelope color="#fff" />
                 <span>Contact Us</span>
               </Link>
-
               <Link
                 to="/events"
-                className="flex items-center gap-3 py-2 cursor-pointer hover:text-yellow-500 pl-6"
+                className="flex items-center gap-3 py-2 cursor-pointer hover:text-yellow-500 px-6"
                 onClick={toggleMenu}
               >
                 <FaCalendarAlt color="#fff" />
                 <span>Events</span>
               </Link>
-
               <Link
                 to="/about us"
-                className="flex items-center gap-3 py-2 cursor-pointer hover:text-yellow-500 pl-6"
+                className="flex items-center gap-3 py-2 cursor-pointer hover:text-yellow-500 px-6"
                 onClick={toggleMenu}
               >
                 <FaInfoCircle color="#fff" />
@@ -143,16 +141,15 @@ function HomeNav() {
               <div className="flex flex-col gap-2">
                 <Link
                   to="/studentLogin"
-                  className="flex items-center gap-3 py-2 cursor-pointer hover:text-yellow-500 pl-6"
+                  className="flex items-center gap-3 py-2 cursor-pointer hover:text-yellow-500 px-6"
                   onClick={toggleMenu}
                 >
                   <FaSignInAlt color="#fff" />
                   <span>Login as student/parent</span>
                 </Link>
-
                 <Link
                   to="/staffLogin"
-                  className="flex items-center gap-3 py-2 cursor-pointer hover:text-yellow-500 pl-6"
+                  className="flex items-center gap-3 py-2 cursor-pointer hover:text-yellow-500 px-6"
                   onClick={toggleMenu}
                 >
                   <FaSignInAlt color="#fff" />

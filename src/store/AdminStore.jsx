@@ -170,7 +170,6 @@ export const useAdminStore = create((set) => ({
           content,
         }
       );
-      console.log(response.data.newAnnouncment);
       return response.data.newAnnouncment;
     } catch (error) {
       console.log(

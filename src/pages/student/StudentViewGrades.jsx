@@ -10,10 +10,6 @@ function StudentViewGrades() {
     fetchShowGrades();
   }, [fetchShowGrades]);
 
-  useEffect(() => {
-    console.log("Grades data:", grades); // For debugging structure
-  }, [grades]);
-
   return (
     <div className="min-h-screen bg-base-200 flex flex-col items-center pb-5">
       <StudentNavbar />

@@ -23,7 +23,6 @@ export default function ParentReviewQuiz() {
           student_id
         );
         if (submission) {
-          console.log(submission);
           setStudentSubmission(submission);
 
           setQuiz({

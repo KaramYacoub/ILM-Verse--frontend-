@@ -59,7 +59,6 @@ function TeacherQuizzesTab() {
   // Handle show students submissions
   // This function navigates to the quiz submit status page with the quiz data
   const handleShowSubmit = (quiz) => {
-    console.log(quiz);
     navigate(
       `/teacher-course-content/${course_id}/quiz-submit-status/${quiz._id}`,
       {
@@ -156,7 +155,8 @@ function TeacherQuizzesTab() {
                   </span>
                   <span className="flex items-center gap-1">
                     <Calendar className="w-4 h-4" />
-                    Available: {formatDate(quiz.start_date)} at {quiz.start_time}
+                    Available: {formatDate(quiz.start_date)} at{" "}
+                    {quiz.start_time}
                   </span>
                   <span>Questions: {quiz.questions.length}</span>
                 </div>

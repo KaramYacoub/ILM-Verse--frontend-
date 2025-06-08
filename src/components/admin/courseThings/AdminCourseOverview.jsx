@@ -137,33 +137,33 @@ function AdminCourseOverview() {
       <AdminNavbar />
       <div className="flex-1 p-6 max-w-6xl w-full mx-auto">
         {/* Course Header */}
-        <div className="bg-base-100 rounded-xl shadow-md p-6 mb-8">
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-            <div>
-              <h1 className="text-3xl font-bold text-primary">
+        <div className="bg-base-100 rounded-xl shadow-md p-4 sm:p-6 mb-8">
+          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+            <div className="min-w-0">
+              <h1 className="text-2xl sm:text-3xl font-bold text-primary truncate">
                 {course.course_name}
               </h1>
-              <p className="text-sm text-gray-500 mt-1">
+              <p className="text-xs sm:text-sm text-gray-500 mt-1 truncate">
                 Course ID: {courseId}
               </p>
             </div>
-            <div className="flex gap-2">
-              <button className="btn btn-outline" onClick={() => navigate(-1)}>
+            <div className="flex flex-col gap-2 sm:flex-row sm:gap-2 w-full md:w-auto">
+              <button className="btn btn-outline w-full sm:w-auto" onClick={() => navigate(-1)}>
                 <ArrowLeft className="h-4 w-4" />
-                Back
+                <span className="hidden sm:inline">Back</span>
               </button>
               <button
-                className="btn btn-secondary"
+                className="btn btn-secondary w-full sm:w-auto"
                 onClick={() => setShowStudentsModal(true)}
               >
-                Show Students
+                <span className="truncate">Show Students</span>
               </button>
               <button
-                className="btn btn-primary"
+                className="btn btn-primary w-full sm:w-auto"
                 onClick={() => setShowAddModal(true)}
               >
                 <Plus className="h-4 w-4" />
-                Add New Unit
+                <span className="truncate">Add New Unit</span>
               </button>
             </div>
           </div>

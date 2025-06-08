@@ -18,7 +18,6 @@ function ParentShowQuizzes() {
   }, [course_id, getQuizzes, student_id]);
 
   const handleShowResult = (quiz) => {
-    console.log(quiz);
     navigate(
       `/parent/course/${course_id}/${student_id}/quizes/${quiz.quiz_id}/mark`,
       {

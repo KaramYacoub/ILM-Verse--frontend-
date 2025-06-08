@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import { AlertCircle, Loader2, XCircle } from "lucide-react";
+import { AlertCircle, Loader2 } from "lucide-react";
 import { useAdminStore } from "../../store/AdminStore";
 import AdminNavbar from "../../components/admin/AdminNavbar";
 import { formatDate, getDayOfWeek } from "../../utils/utils";
@@ -34,16 +34,21 @@ function AdminShowAbsences() {
     <div className="min-h-screen bg-base-200 flex flex-col items-center pb-5">
       <AdminNavbar />
 
-      <div className="p-6 space-y-6 w-full max-w-5xl bg-base-100 rounded-lg shadow-md mt-5">
-        <div className="flex justify-between items-center">
-          <h2 className="text-4xl font-bold text-primary">Student Absences</h2>
-          <button onClick={() => navigate(-1)} className="btn btn-ghost">
+      <div className="p-4 sm:p-6 space-y-6 w-full max-w-5xl bg-base-100 rounded-lg shadow-md mt-5">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 sm:gap-0">
+          <h2 className="text-2xl sm:text-4xl font-bold text-primary truncate">
+            Student Absences
+          </h2>
+          <button
+            onClick={() => navigate(-1)}
+            className="btn btn-ghost w-full sm:w-auto"
+          >
             ← Back to Dashboard
           </button>
         </div>
 
         {loading ? (
-          <div className="flex items-center justify-center h-screen">
+          <div className="flex items-center justify-center min-h-[200px]">
             <Loader2 className="animate-spin" size={50} />
           </div>
         ) : absences?.absenceDates?.length > 0 ? (
@@ -53,14 +58,14 @@ function AdminShowAbsences() {
                 <div className="stat-title text-base-content font-semibold">
                   Total Absences
                 </div>
-                <div className="stat-value text-4xl font-bold">
+                <div className="stat-value text-2xl sm:text-4xl font-bold">
                   {absences.absenceCount}
                 </div>
               </div>
             </div>
 
             <div className="overflow-x-auto bg-base-200 rounded-lg shadow">
-              <table className="table w-full text-center">
+              <table className="table w-full text-center text-xs sm:text-base">
                 <thead>
                   <tr className="bg-primary text-primary-content">
                     <th>#</th>
@@ -81,7 +86,7 @@ function AdminShowAbsences() {
             </div>
           </>
         ) : (
-          <div className="alert alert-info text-center shadow-lg flex justify-center">
+          <div className="alert alert-info text-center shadow-lg flex flex-col sm:flex-row items-center justify-center gap-2">
             <AlertCircle className="stroke-current flex-shrink-0 h-6 w-6" />
             <span>No absence records found for this student.</span>
           </div>
