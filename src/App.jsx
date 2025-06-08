@@ -8,7 +8,7 @@ import ScrollToTop from "./components/shared/ScrollToTop";
 const Error = lazy(() => import("./pages/shared/Error"));
 const Home = lazy(() => import("./pages/shared/Home"));
 const Footer = lazy(() => import("./components/shared/Footer"));
-const StudentLogin = lazy(() => import("./pages/shared/studentLogin"));
+const StudentLogin = lazy(() => import("./pages/shared/StudentLogin"));
 const StaffLogin = lazy(() => import("./pages/shared/StaffLogin"));
 const AboutUs = lazy(() => import("./pages/shared/AboutUs"));
 const ContactUs = lazy(() => import("./pages/shared/ContactUs"));
